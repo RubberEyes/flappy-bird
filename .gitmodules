@@ -1,0 +1,3 @@
+[submodule "flappy-lib"]
+	path = flappy-lib
+	url = ./flappy-lib
