@@ -5,10 +5,10 @@ edition = "2024"
 
 [features]
 default = []
-debug = ["flappy-lib/debug"]
+debug = ["flappy-lib/debug", "bevy/debug"]
 
 [dependencies]
-bevy = { version = "0.18.0", features = ["debug"] }
+bevy = { version = "0.18.0" }
 # Set max log levels. This helps avoid unwanted low-severity log spam, which can affect performance.
 log = { version = "0.4", features = [
     "max_level_debug",
@@ -18,7 +18,7 @@ tracing = { version = "0.1", features = [
     "max_level_debug",
     "release_max_level_warn",
 ] }
-flappy-lib = { path = "flappy-lib", features = ["debug"] }
+flappy-lib = { path = "flappy-lib" }
 
 # Idiomatic Bevy code often triggers these lints, and the CI workflow treats them as errors.
 # In some cases they may still signal poor code quality however, so consider commenting out these lines.
