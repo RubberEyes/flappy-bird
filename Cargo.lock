@@ -2569,6 +2569,7 @@ dependencies = [
 [[package]]
 name = "flappy-lib"
 version = "0.1.0"
+source = "git+https://github.com/RubberEyes/flappy-lib?branch=master#5e9e782d60136bb779dcf7645ca6039dd65c6b9c"
 dependencies = [
  "bevy",
  "bevy-inspector-egui",
